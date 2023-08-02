@@ -15,3 +15,12 @@ print("-------------")
 for index, value in enumerate(x):
     if value == 76:
         print(index)
+print("------using while loop-------") 
+      
+i=0
+while i<(len(x)):
+    # print(x[i])
+    if x[i]==90:
+        print(f"location of 90 is {i}")
+        break
+    i+=1

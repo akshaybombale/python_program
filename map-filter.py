@@ -1,3 +1,5 @@
+from functools import reduce
+
 # lambda function
 x = lambda p, q : p * q
 print(x(5, 6))
@@ -10,6 +12,7 @@ print(cube(2))
 
 # map in python
 x = [5,8,5,3,1,6,8,6]
+z = [6,10,0,4]
 new_x = tuple (map(cube ,x))
 print(new_x)
 
@@ -20,4 +23,9 @@ def above(a):
 new_list= list(filter(above, x))
 print(new_list)
     
-    
+# reduce in python
+def sum (x, y):
+    return (x + y)
+
+reduce_list = reduce (sum, z)    
+print(reduce_list)
